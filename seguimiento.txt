@@ -13,3 +13,4 @@ No hay label.
 -> Refactoriza (cambia) los nombres de todas las clases y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
 -> Modifica el README.md donde sea más más más explicativo sobre el objetivo del proyecto.
 -> Un único "main" en todo el proyecto.
+-> "ey" NO INDICA NADA, ¿quál es el cambio?, luego signnifica que no deseas que lo evalue.
