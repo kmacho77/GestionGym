@@ -1,6 +1,6 @@
 
 package gestiongimnasio;
 
-public class Controlador {
+public class Superman {
     
 }
