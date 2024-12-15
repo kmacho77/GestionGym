@@ -14,3 +14,9 @@ No hay label.
 -> Modifica el README.md donde sea más más más explicativo sobre el objetivo del proyecto.
 -> Un único "main" en todo el proyecto.
 -> "ey" NO INDICA NADA, ¿quál es el cambio?, luego signnifica que no deseas que lo evalue.
+
+2º modificación:
+Elimina la imagen (en el sentido de ser usada guía del look), y debes tener 3 ventanas (la tercera es el JDialog):
+1-> presentación, no redimensionable (tamaño mediano), simulando la carga, y desaparece por tiempo (usa la "gym.jpg").
+2-> Salta la principal, donde todo el menú es funcional en el sentido de mandar un mensaje por consola, y usar "Ajustes" con una opción configuración con un JDialog modificado. Donde los cambios del look y los jugadores, y debe poder cargar los datos guardados en el arranque.
+Todo los métodos y clases documentados.
