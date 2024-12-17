@@ -11,7 +11,12 @@ public class Batman implements MouseListener {
     private FlechaVerde1Carga OjoPiojo;
     private flechaVerde2principal ojoelpiojo;
     private dialogandoConFlechaVerde conver;
-
+/**
+ * 
+ * @param ElModelin modelo del programa
+ * @param OjoPiojo vista del programa
+ * inicia todas las clases y añade lso escuchadores 
+ */
     public Batman(Superman ElModelin, FlechaVerde1Carga OjoPiojo) {
         this.ElModelin = ElModelin;
         this.OjoPiojo = OjoPiojo;
@@ -26,6 +31,10 @@ public class Batman implements MouseListener {
 // Agregar el listener al menú Configuración
         
     }
+    /**
+     * activa la pantalla de carga y pone un temporizador para 
+     * activar la principal
+     */
      public void iniciar() {
         // Mostrar la pantalla de carga
         OjoPiojo.setVisible(true);
@@ -37,6 +46,9 @@ public class Batman implements MouseListener {
         timer.setRepeats(false);
         timer.start();
     }
+     /**
+      * desactivar la pantalla de carga y activar la principal
+      */
     private void abrirVentanaPrincipal() {
         // Cerrar la pantalla de carga
         OjoPiojo.dispose();
@@ -49,7 +61,11 @@ public class Batman implements MouseListener {
 
    
    
-
+/**
+ * 
+ * @param e evento del click mouse
+ * hacer acciones en el programa dependiendo de la opcion pulsada
+ */
     @Override
     public void mouseClicked(MouseEvent e) {
         System.out.println("aaaa");
@@ -100,7 +116,9 @@ public class Batman implements MouseListener {
     public void mouseExited(MouseEvent e) {
     }
     
-    
+    /**
+     * metodo para hacer visible el jdialog dialogandoconflechaverde
+     */
      private void abriendoo() {
      conver.setVisible(true); // Mostrar el JDialog
     }

@@ -10,7 +10,9 @@ import javax.swing.JPanel;
 
 public class flechaVerde2principal  extends javax.swing.JFrame {
   private ImageIcon imgDc;
-  
+  /**
+   * inicia la ventana y carga las imagenes
+   */
     public flechaVerde2principal() {
         initComponents();
         
@@ -123,7 +125,11 @@ public class flechaVerde2principal  extends javax.swing.JFrame {
     public JPanel getBaticueva() {
         return baticueva;
     }
-
+/**
+ * 
+ * @param color el color al que deseamos cambiar
+ * compara la cadena de string y cambia de color con eso
+ */
     public void setBaticueva(String color) {
         switch(color){
             case "rojo":
