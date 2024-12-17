@@ -30,8 +30,8 @@ public class FlechaVerde1Carga extends javax.swing.JFrame {
             InicioGotham.getWidth(), InicioGotham.getHeight(), Image.SCALE_SMOOTH);
             InicioGotham.setIcon(new ImageIcon(imagenEscalada));
             InicioGotham.setText(null); // Quitar el texto de "hola"
-        
-    }
+     
+    }   
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

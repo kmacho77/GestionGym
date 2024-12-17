@@ -2,7 +2,6 @@
 package gestiongimnasio;
 
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.Timer;
@@ -17,8 +16,15 @@ public class Batman implements MouseListener {
         this.ElModelin = ElModelin;
         this.OjoPiojo = OjoPiojo;
         this.ojoelpiojo=new flechaVerde2principal();
-        this.ojoelpiojo.ClickConfigura(this);  // Agregar el listener al menú Configuración
-
+        this.conver=new dialogandoConFlechaVerde(ojoelpiojo,true);
+        this.ojoelpiojo.ClickConfigura(this); 
+        this.conver.Clickdef(this);
+        this.conver.Clicklil(this);
+        this.conver.Clickroj(this);
+        this.conver.Clickros(this);
+        this.conver.Clickver(this);
+// Agregar el listener al menú Configuración
+        
     }
      public void iniciar() {
         // Mostrar la pantalla de carga
@@ -51,6 +57,31 @@ public class Batman implements MouseListener {
             abriendoo();
             System.out.println("abriendo configuracion");
         }
+        if(e.getSource()==conver.getBrver()){
+            System.out.println("cambiando a verde...");
+            ojoelpiojo.setBaticueva("verde");
+        }
+        if(e.getSource()==conver.getBtroj()){
+            System.out.println("cambiando a rojo...");
+            ojoelpiojo.setBaticueva("rojo");
+        }
+        if(e.getSource()==conver.getBtlil()){
+            System.out.println("cambiando a lila...");
+            ojoelpiojo.setBaticueva("lila");
+        }
+        if(e.getSource()==conver.getBtdef()){
+            System.out.println("cambiando a default...");
+            ojoelpiojo.setBaticueva("def");
+        }
+        if(e.getSource()==conver.getBtros()){
+            System.out.println("cambiando a rosa...");
+            ojoelpiojo.setBaticueva("rosa");
+        }
+        
+        
+        
+        
+        
     }
 
     @Override
@@ -71,7 +102,6 @@ public class Batman implements MouseListener {
     
     
      private void abriendoo() {
-     conver=new dialogandoConFlechaVerde(ojoelpiojo,true);
      conver.setVisible(true); // Mostrar el JDialog
     }
     
